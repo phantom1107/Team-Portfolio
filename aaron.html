@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron James Macalalad - Team Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <header>
+      <div class="container">
+        <h1 class="team-title">Team Portfolio</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="member-detail">
+        <img src="template/aaron.jpg" alt="Aaron James Macalalad"/>
+        <h1>Aaron James M. Macalalad</h1>
+        <h2>Project Manager</h2>
+
+        <div class="skills">
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">Scrum</span>
+          <span class="skill-tag">JIRA</span>
+          <span class="skill-tag">Risk Management</span>
+          <span class="skill-tag">Team Leadership</span>
+        </div>
+
+        <p class="profile-quote">
+          "Effective leadership is not about making speeches or being liked; leadership is defined by results, not attributes."
+        </p>
+
+        <div class="section-divider"></div>
+
+        <strong>
+          <br>
+          Hi! I'm Aaron James M. Macalalad a driven project manager with a passion for technology and team coordination. I excel at 
+          organizing workflows and ensuring projects are completed on time and within scope. My goal is 
+          to create efficient processes that help teams deliver their best work.
+        </strong>
+
+        <div class="member-info-container">
+          <h3>About Me</h3>
+          <p>
+            Age: 20<br>
+            Birthdate: March 28, 2005<br>
+            Nationality: Filipino<br>
+            Address: Brgy. Suba Majayjay, Laguna
+          </p>
+
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h3>Career Goals</h3>
+        <p>
+          As a Project Manager, I'm focused on developing expertise in agile methodologies and enhancing my leadership capabilities. 
+          My short-term objective is to obtain PMP certification and lead larger cross-functional teams. Looking ahead, I aim to 
+          oversee enterprise-level digital transformation projects that deliver significant business value. Ultimately, I aspire 
+          to advance into a program management role where I can guide multiple interconnected projects while mentoring the next 
+          generation of project leaders.
+        </p>
+
+        <div class="section-divider"></div>
+
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Playing online games</li>
+          <li>Playing basketball</li>
+          <li>Watching movies</li>
+          <li>Reading management books</li>
+          <li>Exploring new technologies</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <h3>Education</h3>
+        <ul>
+          <li>Currently studying at Laguna State Polytechnic School</li>
+          <li>Graduated from ACTS Computer College</li>
+          <li>Graduated from Suba National Higher School</li>
+          <li>Graduated from Suba Elementary School</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <h3>Project Management Skills</h3>
+        <ul>
+          <li>Team Coordination</li>
+          <li>Resource Allocation</li>
+          <li>Timeline Management</li>
+          <li>Budget Oversight</li>
+          <li>Stakeholder Communication</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <h3>Recent Projects</h3>
+        <ul>
+          <li>Team Portfolio Website - Led development from concept to deployment, coordinating tasks across front-end and back-end teams.</li>
+          <li>E-Commerce Platform Launch - Managed product timeline, resource allocation, and successful market delivery within budget constraints.</li>
+          <li>Pawsitive Sanctuary App - Coordinated cross-functional teams, ensuring smooth collaboration between designers and developers.</li>
+          <li>College Event Management System - Supervised development of a campus-wide platform for event registration and attendance tracking.</li>
+        </ul>
+
+        <div class="section-divider"></div>
+
+        <h3>Contact</h3>
+        <p>Phone: 09127403768</p>
+        <p>Email: ajmaclld@gmail.com</p>
+
+        <div class="social-links member-socials">
+          <a href="https://github.com/erondipinili" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100045917363212" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/aeronjames1/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="text-center mb-5 d-flex justify-content-center gap-3">
+          <a href="index.html" class="back-button btn btn-primary" style="min-width: 240px;"><i class="fas fa-arrow-left"></i> Back to Team</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectDocModal" style="min-width: 240px;">
+            <i class="fas fa-file-alt"></i> Project Documentation
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Project Documentation Modal -->
+    <div class="modal fade" id="projectDocModal" tabindex="-1" aria-labelledby="projectDocModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="projectDocModalLabel"><i class="fas fa-file-alt me-2"></i>Project Documentation</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div id="projectDocCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#projectDocCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectDocCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectDocCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#projectDocCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img-container bg-light p-3">
+                    <img src="images/homepage1.png" class="d-block mx-auto" alt="Team Portfolio Management">
+                  </div>
+                  <div class="carousel-caption bg-dark bg-opacity-75 rounded py-3 px-4">
+                    <h5 class="fw-bold">Team Portfolio Management</h5>
+                    <p>Project coordination and team collaboration workflow</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-container bg-light p-3">
+                    <img src="images/seller_dash_products.png" class="d-block mx-auto" alt="E-Commerce Project Timeline">
+                  </div>
+                  <div class="carousel-caption bg-dark bg-opacity-75 rounded py-3 px-4">
+                    <h5 class="fw-bold">E-Commerce Project Timeline</h5>
+                    <p>Resource allocation and milestone tracking</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-container bg-light p-3">
+                    <img src="images/pawsitive_homepage.png" class="d-block mx-auto" alt="Pawsitive Sanctuary Coordination">
+                  </div>
+                  <div class="carousel-caption bg-dark bg-opacity-75 rounded py-3 px-4">
+                    <h5 class="fw-bold">Pawsitive Sanctuary Coordination</h5>
+                    <p>Team assignments and progress tracking</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-container bg-light p-3">
+                    <img src="images/locationfilter1.png" class="d-block mx-auto" alt="Event Management System">
+                  </div>
+                  <div class="carousel-caption bg-dark bg-opacity-75 rounded py-3 px-4">
+                    <h5 class="fw-bold">Event Management System</h5>
+                    <p>Project planning and resource utilization metrics</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#projectDocCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#projectDocCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer bg-light">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById('projectDocCarousel').classList.toggle('carousel-fade')">
+              <i class="fas fa-magic me-1"></i> Toggle Transition Effect
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

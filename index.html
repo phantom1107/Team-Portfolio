@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Team Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.style.opacity = '1';
+        const loader = document.querySelector('.loading');
+        if (loader) loader.style.display = 'none';
+      });
+    </script>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="logo">Team Portfolio</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="container text-center">
+        <h1>Welcome to Our Team</h1>
+        <p>Meet the creative minds behind our success</p>
+        <a href="#team" class="cta-button btn btn-primary">Meet the Team</a>
+      </div>
+    </section>
+
+    <section id="team" class="team-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Team Members</h2>
+        
+        <!-- Search and Filter Section -->
+        <div class="filter-container mb-4">
+          <div class="search-box">
+            <input type="text" id="team-search" class="form-control" placeholder="Search team members...">
+          </div>
+          <div class="filter-buttons mt-3 d-flex justify-content-center flex-wrap gap-2">
+            <button class="filter-btn btn btn-outline-primary active" data-filter="all">All</button>
+            <button class="filter-btn btn btn-outline-primary" data-filter="front">Front End</button>
+            <button class="filter-btn btn btn-outline-primary" data-filter="back">Back End</button>
+            <button class="filter-btn btn btn-outline-primary" data-filter="full">Full Stack</button>
+            <button class="filter-btn btn btn-outline-primary" data-filter="other">Other Roles</button>
+          </div>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img
+                  src="template/justine.jpg"
+                  alt="Justine Sandoval"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Justine Sandoval</h3>
+                <p class="role">Front End Developer</p>
+                <p class="bio">
+                  Passionate about creating beautiful and functional web
+                  applications.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/Justineexc?fbclid=IwY2xjawJr8FBleHRuA2FlbQIxMAABHhPtRiCHqAY8qxRmxmf--X2ey4rhg8qdqb3AcNWUAhQjAdr-hyEi4uDKO4GJ_aem_RjIQhAJOHgdxuvFS6c6XEw" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100071847356141&rdid=qXHrtXf70sqfC9Yf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FtxyfEt3r#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/justineexc_/?fbclid=IwY2xjawJr7-JleHRuA2FlbQIxMAABHpBmDB1tYsKnWSDHieF48rMAKPGfBgGyJsznmIMaLiGnft2VlLYVkxdx5b1i_aem_16n2eoWOJgzlce0U2qRJQg" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="justine.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img src="template/roberto.jpg" alt="Roberto Tamayo" class="img-fluid" />
+              </div>
+              <div class="card-content">
+                <h3>Roberto Tamayo</h3>
+                <p class="role">Back End Developer</p>
+                <p class="bio">
+                  Expert in building robust and scalable server-side applications.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/phantom1107?fbclid=IwY2xjawJsBHJleHRuA2FlbQIxMAABHhNWfP1-LVdmb57BkTXjzeYdsxKszvJn1y73EHt_L0Ld01z4cUp5VHc1pM7e_aem_YnQfgFjkOwePeBrTheLQ5A" class="social-icon"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/xXMr.TamayoXx?mibextid=qi2Omg&rdid=g2YemhopOQazB2rf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AT9k4JshD%2F%3Fmibextid%3Dqi2Omg#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/oyamat07/?igsh=dTdhNXEwcms5dW5q&fbclid=IwY2xjawJr8iBleHRuA2FlbQIxMAABHr5D5aJlHRScikOEGb897SW3DVxSrfZobXqoSZlgq9oFGIPFxQLjBzPH_INq_aem_EtRX_YQncDSsJNNBL1A2Kg" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="roberto.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img src="template/axel.jpg" alt="Axel Ross Mendoza" class="img-fluid" />
+              </div>
+              <div class="card-content">
+                <h3>Axel Ross Mendoza</h3>
+                <p class="role">Back End Developer</p>
+                <p class="bio">
+                  Creating intuitive and engaging user experiences through
+                  thoughtful design.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/axel172002" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/axel.mendoza.17" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/axel.mendoza.17/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="axel.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img
+                  src="template/isaac.jpg"
+                  alt="Isaac Kier Riola"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Isaac Kier Riola</h3>
+                <p class="role">Full Stack Developer</p>
+                <p class="bio">
+                  Bridging the gap between front-end and back-end development.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/Saikooo0?fbclid=IwY2xjawJr-_9leHRuA2FlbQIxMAABHgMxwAAL39T14pq4diEo_4NL6vKQZltY8YzOqxq48Yc_g3G6zaOON_EUdZwq_aem_bjTMuL8a2_cFVcvL7ln80A" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/isaackier.riola" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/_seijww/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="isaac.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img src="template/onyx.jpg" alt="John Onyx Masa" class="img-fluid" />
+              </div>
+              <div class="card-content">
+                <h3>John Onyx Masa</h3>
+                <p class="role">DevOps Engineer</p>
+                <p class="bio">
+                  Ensuring smooth deployment and operation of our applications.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/Hotaru-zuki?fbclid=IwY2xjawJsH-dleHRuA2FlbQIxMAABHh3WNAw7x8sG8yU7PjQsEPS6JADulO4qFEj8XVcX648jpVnkPccq8X-JL9C1_aem_e_qOiERbufPv05HuVHiwJg" class="social-icon"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61552758524579" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/xynzoki.taro/?fbclid=IwY2xjawJsIBhleHRuA2FlbQIxMAABHv_ZDRmEMRmnWLsOy9Tsi6jmUgNaV2YRbOel4o7TVNiCmiRihhqyY-EUC6ha_aem_GWwRSviaJrOsHBKHf7rGpA" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="john.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="card-image">
+                <img
+                  src="template/aaron.jpg"
+                  alt="Aaron James Macalalad"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Aaron James Macalalad</h3>
+                <p class="role">Project Manager</p>
+                <p class="bio">
+                  Leading our team to success through effective project
+                  management.
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/erondipinili" class="social-icon"><i class="fab fa-github"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100045917363212" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/aeronjames1/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="aaron.html" class="view-profile btn btn-primary mt-2">View Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <div class="row">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="contact-info p-4">
+              <h3>Contact Information</h3>
+              <p><i class="fas fa-envelope"></i> contact@finalproject.com</p>
+              <p><i class="fas fa-phone"></i> 09486918494 </p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Our Team is Located in Nagcarlan Laguna.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <form class="contact-form p-4">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="text-center">
+          <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
